@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Chip pins -->
+    <path
+        android:pathData="M43,27.5 L43,33 M50,27.5 L50,33 M58,27.5 L58,33 M65,27.5 L65,33 M43,75 L43,80.5 M50,75 L50,80.5 M58,75 L58,80.5 M65,75 L65,80.5 M27.5,43 L33,43 M27.5,50 L33,50 M27.5,58 L33,58 M27.5,65 L33,65 M75,43 L80.5,43 M75,50 L80.5,50 M75,58 L80.5,58 M75,65 L80.5,65"
+        android:strokeColor="@color/launcher_foreground"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+    <!-- Chip body -->
+    <path
+        android:pathData="M41,33 L67,33 Q75,33 75,41 L75,67 Q75,75 67,75 L41,75 Q33,75 33,67 L33,41 Q33,33 41,33 Z"
+        android:fillColor="@color/launcher_foreground" />
+    <!-- </> -->
+    <path
+        android:pathData="M47.5,46.5 L41.5,54 L47.5,61.5 M60.5,46.5 L66.5,54 L60.5,61.5 M56.5,44.5 L51.5,63.5"
+        android:strokeColor="@color/launcher_background"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

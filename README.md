@@ -59,3 +59,7 @@ app/src/main/java/com/scanner3d/
 ```
 
 Каждый скан хранится в `files/scans/<id>/`: `meta.json`, `cloud.bin`, `mesh.bin`, `video.mp4`, `thumb.png`.
+
+## Также в репозитории
+
+[`ghidroid/`](ghidroid/README.md) — отдельное приложение: дизассемблер и декомпилятор `.so` / `.dll` / `.exe` / `.dylib` для Android на движке Ghidra.

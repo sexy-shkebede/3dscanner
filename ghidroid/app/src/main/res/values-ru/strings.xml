@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_with_label">Дизассемблировать в Ghidroid</string>
+
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="open">Открыть</string>
+    <string name="go">Перейти</string>
+    <string name="back">Назад</string>
+    <string name="forward">Вперёд</string>
+    <string name="more">Ещё</string>
+    <string name="settings">Настройки</string>
+    <string name="error_title">Что-то пошло не так</string>
+
+    <string name="home_subtitle">Ghidra %1$s · языков процессоров: %2$d</string>
+    <string name="home_subtitle_loading">Ghidra %1$s</string>
+    <string name="open_file">Открыть файл</string>
+    <string name="open_as">Открыть как…</string>
+    <string name="recent_files">Недавние файлы</string>
+    <string name="currently_open">Открыт сейчас</string>
+    <string name="empty_title">Пока нечего разбирать</string>
+    <string name="empty_text">Откройте .so, .dll, .exe, .dylib, .o или сырой образ прошивки. Дизассемблер SLEIGH и декомпилятор Ghidra работают прямо на телефоне.</string>
+    <string name="delete_title">Убрать из библиотеки?</string>
+    <string name="delete_text">Копия «%1$s», сохранённая приложением, будет удалена. Исходный файл не изменится.</string>
+    <string name="preparing_title">Подготовка Ghidra</string>
+    <string name="preparing_text">Распаковка спецификаций процессоров (только при первом запуске)</string>
+    <string name="engine_failed">Не удалось запустить движок Ghidra</string>
+
+    <string name="stage_copying">Копирование файла…</string>
+    <string name="stage_parsing">Загрузка и анализ…</string>
+    <string name="stage_starting">Запуск Ghidra…</string>
+
+    <string name="tab_overview">Обзор</string>
+    <string name="tab_functions">Функции</string>
+    <string name="tab_code">Код</string>
+    <string name="tab_strings">Строки</string>
+    <string name="tab_hex">Hex</string>
+
+    <string name="go_to">Перейти</string>
+    <string name="go_to_hint">Адрес (hex) или символ</string>
+    <string name="go_to_error">Нет такого адреса или символа</string>
+    <string name="change_language">Сменить процессор</string>
+    <string name="close_file">Закрыть файл</string>
+
+    <string name="stripped">без символов</string>
+    <string name="stat_functions">функций</string>
+    <string name="stat_imports">импортов</string>
+    <string name="stat_strings">строк</string>
+    <string name="analysis_strings">Поиск строк…</string>
+    <string name="analysis_functions">Поиск функций… найдено %1$d</string>
+    <string name="analysis_waiting">Анализ…</string>
+    <string name="note_dotnet">Это управляемая сборка .NET. Дизассемблировать можно только нативные заглушки, байт-код CIL не поддерживается.</string>
+    <string name="processor">Процессор</string>
+    <string name="language">Язык</string>
+    <string name="description">Описание</string>
+    <string name="compiler_spec">Соглашение компилятора</string>
+    <string name="instruction_align">Выравнивание инструкций</string>
+    <string name="header">Заголовок</string>
+    <string name="format">Формат</string>
+    <string name="image_base">База образа</string>
+    <string name="entry_point">Точка входа</string>
+    <string name="libraries">Библиотеки (%1$d)</string>
+    <string name="sections">Секции (%1$d)</string>
+
+    <string name="search_functions">Поиск среди %1$d функций</string>
+    <string name="filter_all">Все</string>
+    <string name="filter_exported">Экспорт</string>
+    <string name="filter_imports">Импорт</string>
+    <string name="filter_local">Локальные</string>
+    <string name="filter_discovered">Найденные</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="nothing_found_text">Попробуйте другое имя, адрес или фильтр.</string>
+
+    <string name="action_decompile">Декомпилировать</string>
+    <string name="action_listing">Показать в листинге</string>
+    <string name="action_references">Найти ссылки</string>
+    <string name="action_refs_here">Ссылки на этот адрес</string>
+    <string name="action_follow">Перейти к 0x%1$s</string>
+    <string name="action_show_hex">Показать в hex</string>
+    <string name="action_show_listing_at">Листинг по адресу 0x%1$s</string>
+    <string name="action_copy_name">Копировать имя</string>
+    <string name="action_copy_address">Копировать адрес</string>
+    <string name="action_copy_line">Копировать строку</string>
+    <string name="action_copy_text">Копировать текст</string>
+    <string name="action_copy_function">Копировать функцию</string>
+    <string name="action_share_function">Поделиться кодом</string>
+
+    <string name="code_empty_title">Выберите функцию</string>
+    <string name="code_empty_text">Выберите функцию в списке или перейдите по адресу, чтобы увидеть листинг и декомпилированный C.</string>
+    <string name="decompiling">Декомпиляция %1$s…</string>
+    <string name="decompile_failed">Не удалось декомпилировать</string>
+    <string name="show_listing">Показать листинг</string>
+
+    <string name="search_strings">Поиск среди %1$d строк</string>
+    <string name="no_strings">Строк нет</string>
+    <string name="no_strings_text">С текущим фильтром печатных строк не найдено.</string>
+
+    <string name="references_to">Ссылки на %1$s</string>
+    <string name="references_found">Найдено: %1$d</string>
+    <string name="references_searching">Поиск по коду…</string>
+    <string name="ref_data">данные: %1$s</string>
+
+    <string name="language_title">Процессор</string>
+    <string name="language_subtitle">Выберите язык, который будет использовать Ghidra</string>
+    <string name="search_languages">Поиск среди %1$d языков</string>
+    <string name="load_raw">Загрузить как сырой бинарник</string>
+    <string name="load_raw_hint">Отобразить весь файл по одному адресу, игнорируя заголовки</string>
+    <string name="base_address">Базовый адрес</string>
+
+    <string name="settings_appearance">Оформление</string>
+    <string name="settings_theme">Тема</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="settings_dynamic">Динамические цвета</string>
+    <string name="settings_dynamic_hint">Подстраивать цвета интерфейса под обои</string>
+    <string name="settings_font_size">Размер шрифта кода: %1$d sp</string>
+    <string name="settings_decompiler">Декомпилятор</string>
+    <string name="settings_line_width">Ширина строки</string>
+    <string name="width_fit">По экрану</string>
+    <string name="settings_readonly">Константная память только для чтения</string>
+    <string name="settings_readonly_hint">Считать значения из read-only секций константами (строковые литералы, таблицы переходов)</string>
+    <string name="settings_open_in">Открывать функции в</string>
+    <string name="view_decompiler">Декомпиляторе</string>
+    <string name="view_listing">Листинге</string>
+    <string name="settings_listing">Листинг</string>
+    <string name="settings_bytes">Показывать байты инструкций</string>
+    <string name="settings_bytes_hint">Сырые байты опкодов рядом с каждой инструкцией</string>
+    <string name="settings_lowercase">Мнемоники строчными</string>
+    <string name="settings_lowercase_hint">Ghidra печатает мнемоники x86 заглавными</string>
+    <string name="settings_analysis">Автоанализ</string>
+    <string name="settings_discover">Искать функции</string>
+    <string name="settings_discover_hint">После открытия проходить по коду и собирать цели вызовов</string>
+    <string name="settings_min_string">Минимальная длина строки: %1$d</string>
+    <string name="settings_about">О приложении</string>
+    <string name="about_text">Дизассемблер и декомпилятор для Android на основе Ghidra %1$s (SLEIGH и C++-декомпилятор), языков процессоров: %2$d.</string>
+    <string name="about_license">Ghidra разработана Агентством национальной безопасности США и распространяется по лицензии Apache 2.0. Ghidroid — независимый проект, не связанный с АНБ.</string>
+</resources>

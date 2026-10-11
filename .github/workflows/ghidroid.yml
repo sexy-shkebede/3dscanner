@@ -1,0 +1,66 @@
+name: Ghidroid build
+
+on:
+  push:
+    branches: [main]
+    paths: ['ghidroid/**', '.github/workflows/ghidroid.yml']
+  pull_request:
+    paths: ['ghidroid/**', '.github/workflows/ghidroid.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    working-directory: ghidroid
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install Android SDK packages
+        run: |
+          SDKMANAGER=$(ls -d "$ANDROID_HOME"/cmdline-tools/*/bin/sdkmanager | sort -V | tail -1)
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" "platforms;android-37.0" "build-tools;36.1.0" "ndk;29.0.14206865" "cmake;3.31.6" > /dev/null
+
+      - name: Install host build tools for the engine tests
+        run: sudo apt-get update && sudo apt-get install -y cmake zlib1g-dev
+
+      - uses: gradle/actions/setup-gradle@v5
+
+      - name: Unit tests
+        run: ./gradlew --no-daemon testDebugUnitTest
+
+      - name: Build APK
+        run: ./gradlew --no-daemon assembleRelease
+
+      - name: Rename APK
+        run: cp app/build/outputs/apk/release/app-release.apk Ghidroid-${{ github.run_number }}.apk
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: Ghidroid-apk
+          path: |
+            ghidroid/Ghidroid-${{ github.run_number }}.apk
+            ghidroid/app/build/screenshots/
+
+      - name: Publish release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ghidroid-${{ github.run_number }}
+          name: Ghidroid build ${{ github.run_number }}
+          body: |
+            Automatic build from ${{ github.sha }}.
+            Install `Ghidroid-${{ github.run_number }}.apk` on Android 8.0+ (arm64-v8a, armeabi-v7a or x86_64).
+          files: ghidroid/Ghidroid-${{ github.run_number }}.apk
+          make_latest: false

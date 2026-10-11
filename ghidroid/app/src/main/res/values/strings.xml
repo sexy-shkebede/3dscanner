@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Ghidroid</string>
+    <string name="open_with_label">Disassemble with Ghidroid</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="open">Open</string>
+    <string name="go">Go</string>
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="more">More</string>
+    <string name="settings">Settings</string>
+    <string name="error_title">Something went wrong</string>
+
+    <string name="home_subtitle">Ghidra %1$s · %2$d processor languages</string>
+    <string name="home_subtitle_loading">Ghidra %1$s</string>
+    <string name="open_file">Open binary</string>
+    <string name="open_as">Open as…</string>
+    <string name="recent_files">Recent files</string>
+    <string name="currently_open">Open now</string>
+    <string name="empty_title">Nothing to take apart yet</string>
+    <string name="empty_text">Open a .so, .dll, .exe, .dylib, .o or a raw firmware image. Ghidra\'s SLEIGH disassembler and decompiler run right on your phone.</string>
+    <string name="delete_title">Remove from library?</string>
+    <string name="delete_text">The copy of “%1$s” stored by the app will be deleted. The original file is not touched.</string>
+    <string name="preparing_title">Preparing Ghidra</string>
+    <string name="preparing_text">Unpacking processor specifications (first launch only)</string>
+    <string name="engine_failed">Ghidra engine failed to start</string>
+
+    <string name="stage_copying">Copying file…</string>
+    <string name="stage_parsing">Loading and analysing…</string>
+    <string name="stage_starting">Starting Ghidra…</string>
+
+    <string name="tab_overview">Overview</string>
+    <string name="tab_functions">Functions</string>
+    <string name="tab_code">Code</string>
+    <string name="tab_strings">Strings</string>
+    <string name="tab_hex">Hex</string>
+
+    <string name="go_to">Go to</string>
+    <string name="go_to_hint">Address (hex) or symbol</string>
+    <string name="go_to_error">No mapped address or symbol matches</string>
+    <string name="change_language">Change processor</string>
+    <string name="close_file">Close file</string>
+
+    <string name="stripped">stripped</string>
+    <string name="stat_functions">functions</string>
+    <string name="stat_imports">imports</string>
+    <string name="stat_strings">strings</string>
+    <string name="analysis_strings">Searching for strings…</string>
+    <string name="analysis_functions">Discovering functions… %1$d found</string>
+    <string name="analysis_waiting">Analysing…</string>
+    <string name="note_dotnet">This is a managed .NET assembly. Only its native stubs can be disassembled; CIL bytecode is not supported.</string>
+    <string name="processor">Processor</string>
+    <string name="language">Language</string>
+    <string name="description">Description</string>
+    <string name="compiler_spec">Compiler spec</string>
+    <string name="instruction_align">Instruction alignment</string>
+    <string name="header">Header</string>
+    <string name="format">Format</string>
+    <string name="image_base">Image base</string>
+    <string name="entry_point">Entry point</string>
+    <string name="libraries">Libraries (%1$d)</string>
+    <string name="sections">Sections (%1$d)</string>
+
+    <string name="search_functions">Search %1$d functions</string>
+    <string name="filter_all">All</string>
+    <string name="filter_exported">Exported</string>
+    <string name="filter_imports">Imports</string>
+    <string name="filter_local">Local</string>
+    <string name="filter_discovered">Discovered</string>
+    <string name="nothing_found">Nothing found</string>
+    <string name="nothing_found_text">Try another name, address or filter.</string>
+
+    <string name="action_decompile">Decompile</string>
+    <string name="action_listing">Show in listing</string>
+    <string name="action_references">Find references</string>
+    <string name="action_refs_here">References to this address</string>
+    <string name="action_follow">Follow to 0x%1$s</string>
+    <string name="action_show_hex">Show in hex</string>
+    <string name="action_show_listing_at">Show listing at 0x%1$s</string>
+    <string name="action_copy_name">Copy name</string>
+    <string name="action_copy_address">Copy address</string>
+    <string name="action_copy_line">Copy line</string>
+    <string name="action_copy_text">Copy text</string>
+    <string name="action_copy_function">Copy function</string>
+    <string name="action_share_function">Share decompiled code</string>
+
+    <string name="code_empty_title">Pick a function</string>
+    <string name="code_empty_text">Choose a function from the list or jump to an address to see its listing and decompiled C.</string>
+    <string name="decompiling">Decompiling %1$s…</string>
+    <string name="decompile_failed">Could not decompile</string>
+    <string name="show_listing">Show listing</string>
+
+    <string name="search_strings">Search %1$d strings</string>
+    <string name="no_strings">No strings</string>
+    <string name="no_strings_text">No printable strings were found with the current filter.</string>
+
+    <string name="references_to">References to %1$s</string>
+    <string name="references_found">%1$d found</string>
+    <string name="references_searching">Searching the code…</string>
+    <string name="ref_data">data: %1$s</string>
+
+    <string name="language_title">Processor</string>
+    <string name="language_subtitle">Choose the language Ghidra should use</string>
+    <string name="search_languages">Search %1$d languages</string>
+    <string name="load_raw">Load as raw binary</string>
+    <string name="load_raw_hint">Map the whole file at one address, ignoring headers</string>
+    <string name="base_address">Base address</string>
+
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_dynamic">Dynamic colour</string>
+    <string name="settings_dynamic_hint">Tint the interface with your wallpaper colours</string>
+    <string name="settings_font_size">Code font size: %1$d sp</string>
+    <string name="settings_decompiler">Decompiler</string>
+    <string name="settings_line_width">Line width</string>
+    <string name="width_fit">Fit</string>
+    <string name="settings_readonly">Constant read-only memory</string>
+    <string name="settings_readonly_hint">Treat values in read-only sections as constants (string literals, jump tables)</string>
+    <string name="settings_open_in">Open functions in</string>
+    <string name="view_decompiler">Decompiler</string>
+    <string name="view_listing">Listing</string>
+    <string name="settings_listing">Listing</string>
+    <string name="settings_bytes">Show instruction bytes</string>
+    <string name="settings_bytes_hint">Raw opcode bytes next to every instruction</string>
+    <string name="settings_lowercase">Lower-case mnemonics</string>
+    <string name="settings_lowercase_hint">Ghidra prints x86 mnemonics in upper case</string>
+    <string name="settings_analysis">Auto analysis</string>
+    <string name="settings_discover">Discover functions</string>
+    <string name="settings_discover_hint">Sweep the code for call targets after opening a file</string>
+    <string name="settings_min_string">Minimum string length: %1$d</string>
+    <string name="settings_about">About</string>
+    <string name="about_text">Disassembler and decompiler for Android built on Ghidra %1$s (SLEIGH and the C++ decompiler), %2$d processor languages.</string>
+    <string name="about_license">Ghidra is developed by the National Security Agency and released under the Apache License 2.0. Ghidroid is an independent project and not affiliated with the NSA.</string>
+</resources>
