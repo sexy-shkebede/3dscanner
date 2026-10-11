@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Scan frame corners -->
+    <path
+        android:pathData="M30,40 L30,30 L40,30 M68,30 L78,30 L78,40 M78,68 L78,78 L68,78 M40,78 L30,78 L30,68"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <!-- Cube -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,36 L69,44.5 L54,53 L39,44.5 Z" />
+    <path
+        android:fillColor="#C8FFFFFF"
+        android:pathData="M39,44.5 L54,53 L54,71 L39,62.5 Z" />
+    <path
+        android:fillColor="#8CFFFFFF"
+        android:pathData="M69,44.5 L69,62.5 L54,71 L54,53 Z" />
+    <!-- Point cloud dots -->
+    <path
+        android:fillColor="#FF9CF1F0"
+        android:pathData="M36,72 m-1.6,0 a1.6,1.6 0,1 0,3.2 0 a1.6,1.6 0,1 0,-3.2 0 M72,36 m-1.6,0 a1.6,1.6 0,1 0,3.2 0 a1.6,1.6 0,1 0,-3.2 0 M73,70 m-1.3,0 a1.3,1.3 0,1 0,2.6 0 a1.3,1.3 0,1 0,-2.6 0 M35,37 m-1.3,0 a1.3,1.3 0,1 0,2.6 0 a1.3,1.3 0,1 0,-2.6 0" />
+</vector>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3D Сканер</string>
+
+    <!-- Common -->
+    <string name="back">Назад</string>
+    <string name="more">Ещё</string>
+    <string name="rename">Переименовать</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="close">Закрыть</string>
+    <string name="start">Начать</string>
+    <string name="finish">Готово</string>
+    <string name="name">Название</string>
+    <string name="share">Поделиться</string>
+    <string name="settings">Настройки</string>
+
+    <!-- Home -->
+    <string name="new_scan">Новый скан</string>
+    <plurals name="scans_count">
+        <item quantity="one">%d скан</item>
+        <item quantity="few">%d скана</item>
+        <item quantity="many">%d сканов</item>
+        <item quantity="other">%d скана</item>
+    </plurals>
+    <string name="empty_title">Сканов пока нет</string>
+    <string name="empty_text">Нажмите «Новый скан» и медленно обойдите объект во время записи. Карта точек строится прямо на экране, а потом её можно собрать в 3D‑модель.</string>
+    <string name="badge_model">3D</string>
+    <string name="delete_scan_title">Удалить скан?</string>
+    <string name="delete_scan_text">«%1$s» вместе с видео, облаком точек и моделью будет удалён без возможности восстановления.</string>
+    <string name="scan_default_name">Скан %1$s</string>
+    <string name="permission_camera_denied">Для сканирования нужен доступ к камере. Его можно включить в настройках системы.</string>
+
+    <!-- Settings -->
+    <string name="setting_source">Источник глубины</string>
+    <string name="source_raw">Сырая глубина</string>
+    <string name="source_smoothed">Гладкая</string>
+    <string name="source_features">Точки‑признаки</string>
+    <string name="setting_source_hint">Сырая глубина — самая точная, гладкая — более плотная. Точки‑признаки работают на любом устройстве с ARCore, но карта получается разреженной.</string>
+    <string name="setting_voxel">Разрешение карты: %1$d мм</string>
+    <string name="setting_voxel_hint">Чем меньше воксель, тем больше деталей и расход памяти. 5–10 мм — для предметов, 15–30 мм — для комнат.</string>
+    <string name="setting_max_depth">Макс. дальность: %1$.1f м</string>
+    <string name="setting_confidence">Мин. уверенность глубины: %1$d%%</string>
+    <string name="setting_max_points">Лимит точек</string>
+    <string name="setting_max_points_hint">Когда карта заполнена, новые точки перестают добавляться.</string>
+    <string name="setting_record_video">Записывать видео</string>
+    <string name="setting_record_video_hint">Сохраняет видео с данными движения, чтобы скан можно было пересобрать позже.</string>
+
+    <!-- Capture -->
+    <string name="capture_ready_hint">Наведите камеру на объект и нажмите запись. Двигайтесь вокруг него медленно.</string>
+    <string name="toggle_camera">Показывать камеру</string>
+    <string name="toggle_highlight">Подсветка точек</string>
+    <string name="reset_map">Сбросить карту</string>
+    <string name="start_scan">Начать сканирование</string>
+    <string name="stop_scan">Остановить и сохранить</string>
+    <string name="saving_scan">Сохранение скана…</string>
+    <string name="hint_initializing">Плавно поводите телефоном, чтобы начать отслеживание</string>
+    <string name="hint_low_light">Слишком темно — добавьте света</string>
+    <string name="hint_too_fast">Слишком быстро — двигайтесь медленнее</string>
+    <string name="hint_few_features">Мало деталей — наведите на текстурный участок</string>
+    <string name="hint_camera_unavailable">Камера занята</string>
+    <string name="hint_lost">Отслеживание потеряно — вернитесь к отсканированной области</string>
+    <string name="hint_map_full">Достигнут лимит точек — остановите запись</string>
+    <string name="replay_title">Пересборка из видео</string>
+    <string name="replay_text">Записанное видео обрабатывается заново с текущими настройками.</string>
+
+    <!-- Errors -->
+    <string name="error_camera_unavailable">Камера недоступна. Закройте другие приложения камеры и попробуйте снова.</string>
+    <string name="error_arcore_declined">Для сканирования нужны «Сервисы Google Play для AR».</string>
+    <string name="error_arcore_missing">Установите «Сервисы Google Play для AR».</string>
+    <string name="error_arcore_update">Обновите «Сервисы Google Play для AR».</string>
+    <string name="error_app_update">Приложение нужно обновить для работы с установленной версией ARCore.</string>
+    <string name="error_device_unsupported">Устройство не поддерживает ARCore, необходимый для 3D‑сканирования.</string>
+    <string name="error_generic">Не удалось запустить AR: %1$s</string>
+    <string name="error_replay">Не удалось прочитать видео.</string>
+    <string name="error_unknown">Что‑то пошло не так.</string>
+
+    <!-- Viewer -->
+    <string name="play_video">Смотреть видео</string>
+    <string name="reset_view">Сбросить вид</string>
+    <string name="rebuild_from_video">Пересобрать из видео</string>
+    <string name="rebuild_from_video_text">Записанное видео будет воспроизведено и обработано с текущими настройками сканирования. Облако точек и модель этого скана будут заменены.</string>
+    <string name="triangles_short">%1$s треуг.</string>
+    <string name="mode_points">Точки</string>
+    <string name="mode_color">Цветная модель</string>
+    <string name="mode_clay">Глина</string>
+    <string name="mode_wire">Каркас</string>
+    <string name="export">Экспорт</string>
+    <string name="build_model">Собрать модель</string>
+    <string name="build_model_hint">Превращает карту точек в сплошную цветную полигональную модель прямо на телефоне.</string>
+    <string name="building_model">Сборка модели</string>
+    <string name="build">Собрать</string>
+    <string name="rebuild">Пересобрать</string>
+    <string name="detail">Детализация</string>
+    <string name="detail_low">Низкая</string>
+    <string name="detail_medium">Средняя</string>
+    <string name="detail_high">Высокая</string>
+    <string name="smoothing">Сглаживание: %1$d</string>
+    <string name="min_observations">Мин. наблюдений точки: %1$d</string>
+    <string name="remove_outliers">Удалять шум</string>
+    <string name="keep_largest">Оставить только крупнейший объект</string>
+    <string name="stage_prepare">Подготовка точек</string>
+    <string name="stage_normals">Расчёт нормалей</string>
+    <string name="stage_field">Вычисление поверхности</string>
+    <string name="stage_mesh">Построение сетки</string>
+    <string name="stage_cleanup">Очистка</string>
+    <string name="stage_color">Окрашивание</string>
+    <string name="build_done">Модель готова</string>
+    <string name="build_empty">Слишком мало точек для модели — отсканируйте объект с разных сторон</string>
+    <string name="build_oom">Не хватает памяти — уменьшите детализацию</string>
+    <string name="build_failed">Не удалось собрать модель</string>
+    <string name="export_what">Что экспортировать</string>
+    <string name="export_model">Модель</string>
+    <string name="export_points">Точки</string>
+    <string name="export_format">Формат</string>
+    <string name="format_glb_hint">glTF binary — открывается в большинстве 3D‑просмотрщиков, Blender, веб и AR‑приложениях.</string>
+    <string name="format_ply_hint">PLY с цветами и нормалями — лучше всего для MeshLab и CloudCompare.</string>
+    <string name="format_obj_hint">Wavefront OBJ с цветами вершин — универсальный, но файлы больше.</string>
+    <string name="save_file">Сохранить файл</string>
+    <string name="export_saved">Файл сохранён</string>
+    <string name="export_failed">Не удалось экспортировать</string>
+</resources>

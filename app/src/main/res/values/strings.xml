@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3D Scanner</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="more">More</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+    <string name="start">Start</string>
+    <string name="finish">Finish</string>
+    <string name="name">Name</string>
+    <string name="share">Share</string>
+    <string name="settings">Settings</string>
+
+    <!-- Home -->
+    <string name="new_scan">New scan</string>
+    <plurals name="scans_count">
+        <item quantity="one">%d scan</item>
+        <item quantity="other">%d scans</item>
+    </plurals>
+    <string name="empty_title">No scans yet</string>
+    <string name="empty_text">Tap “New scan”, then slowly walk around an object while recording. A point map grows live on screen and can be turned into a 3D model.</string>
+    <string name="badge_model">3D</string>
+    <string name="delete_scan_title">Delete scan?</string>
+    <string name="delete_scan_text">“%1$s” with its video, point cloud and model will be removed permanently.</string>
+    <string name="scan_default_name">Scan %1$s</string>
+    <string name="permission_camera_denied">Camera access is required to scan. You can enable it in the system settings.</string>
+
+    <!-- Settings -->
+    <string name="setting_source">Depth source</string>
+    <string name="source_raw">Raw depth</string>
+    <string name="source_smoothed">Smooth depth</string>
+    <string name="source_features">Features</string>
+    <string name="setting_source_hint">Raw depth is the most precise, smooth depth is denser. Feature points work on any ARCore device but give a sparse map.</string>
+    <string name="setting_voxel">Map resolution: %1$d mm</string>
+    <string name="setting_voxel_hint">Smaller voxels keep more detail but use more memory. 5–10 mm suits objects, 15–30 mm suits rooms.</string>
+    <string name="setting_max_depth">Max distance: %1$.1f m</string>
+    <string name="setting_confidence">Min depth confidence: %1$d%%</string>
+    <string name="setting_max_points">Point limit</string>
+    <string name="setting_max_points_hint">Recording stops adding points when the map is full.</string>
+    <string name="setting_record_video">Record video</string>
+    <string name="setting_record_video_hint">Saves the camera video with motion data so the scan can be rebuilt later.</string>
+
+    <!-- Capture -->
+    <string name="capture_ready_hint">Point the camera at the object and press record. Move slowly around it.</string>
+    <string name="toggle_camera">Show camera</string>
+    <string name="toggle_highlight">Highlight points</string>
+    <string name="reset_map">Reset map</string>
+    <string name="start_scan">Start scanning</string>
+    <string name="stop_scan">Stop and save</string>
+    <string name="saving_scan">Saving scan…</string>
+    <string name="hint_initializing">Move the phone slowly to start tracking</string>
+    <string name="hint_low_light">Too dark — add more light</string>
+    <string name="hint_too_fast">Moving too fast — slow down</string>
+    <string name="hint_few_features">Not enough texture — aim at a detailed area</string>
+    <string name="hint_camera_unavailable">Camera is busy</string>
+    <string name="hint_lost">Tracking lost — return to a scanned area</string>
+    <string name="hint_map_full">Point limit reached — stop to save</string>
+    <string name="replay_title">Rebuilding from video</string>
+    <string name="replay_text">The recorded video is being processed again with the current settings.</string>
+
+    <!-- Errors -->
+    <string name="error_camera_unavailable">The camera is not available. Close other camera apps and try again.</string>
+    <string name="error_arcore_declined">Google Play Services for AR is required for scanning.</string>
+    <string name="error_arcore_missing">Please install Google Play Services for AR.</string>
+    <string name="error_arcore_update">Please update Google Play Services for AR.</string>
+    <string name="error_app_update">This app needs an update to work with the installed ARCore.</string>
+    <string name="error_device_unsupported">This device does not support ARCore, which is required for 3D scanning.</string>
+    <string name="error_generic">Could not start AR: %1$s</string>
+    <string name="error_replay">The video could not be read.</string>
+    <string name="error_unknown">Something went wrong.</string>
+
+    <!-- Viewer -->
+    <string name="play_video">Play video</string>
+    <string name="reset_view">Reset view</string>
+    <string name="rebuild_from_video">Rebuild from video</string>
+    <string name="rebuild_from_video_text">The recorded video will be replayed and processed with the current scan settings. The point cloud and model of this scan will be replaced.</string>
+    <string name="triangles_short">%1$s tris</string>
+    <string name="mode_points">Points</string>
+    <string name="mode_color">Colored model</string>
+    <string name="mode_clay">Clay</string>
+    <string name="mode_wire">Wireframe</string>
+    <string name="export">Export</string>
+    <string name="build_model">Build model</string>
+    <string name="build_model_hint">Turns the point map into a solid, colored mesh right on the phone.</string>
+    <string name="building_model">Building model</string>
+    <string name="build">Build</string>
+    <string name="rebuild">Rebuild</string>
+    <string name="detail">Detail</string>
+    <string name="detail_low">Low</string>
+    <string name="detail_medium">Medium</string>
+    <string name="detail_high">High</string>
+    <string name="smoothing">Smoothing: %1$d</string>
+    <string name="min_observations">Min. observations per point: %1$d</string>
+    <string name="remove_outliers">Remove noise</string>
+    <string name="keep_largest">Keep only the largest object</string>
+    <string name="stage_prepare">Preparing points</string>
+    <string name="stage_normals">Estimating normals</string>
+    <string name="stage_field">Computing surface</string>
+    <string name="stage_mesh">Extracting mesh</string>
+    <string name="stage_cleanup">Cleaning up</string>
+    <string name="stage_color">Coloring</string>
+    <string name="build_done">Model is ready</string>
+    <string name="build_empty">Not enough points for a model — scan the object from more angles</string>
+    <string name="build_oom">Not enough memory — try lower detail</string>
+    <string name="build_failed">Could not build the model</string>
+    <string name="export_what">What to export</string>
+    <string name="export_model">Model</string>
+    <string name="export_points">Points</string>
+    <string name="export_format">Format</string>
+    <string name="format_glb_hint">glTF binary — opens in most 3D viewers, Blender, web and AR apps.</string>
+    <string name="format_ply_hint">PLY with colors and normals — best for MeshLab and CloudCompare.</string>
+    <string name="format_obj_hint">Wavefront OBJ with vertex colors — universal, larger files.</string>
+    <string name="save_file">Save file</string>
+    <string name="export_saved">File saved</string>
+    <string name="export_failed">Export failed</string>
+</resources>
